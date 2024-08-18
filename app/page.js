@@ -68,9 +68,7 @@ import React, { useState } from "react";
 const page = () => {
   //! newTask will be taken here......>
   const [newTask, setNewTask] = useState({ title: "", description: "" });
-  const [allTask, setAllTask] = useState([
-    { id: 1, title: "nothing", description: "nothing" },
-  ]);
+  const [allTask, setAllTask] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
